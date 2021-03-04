@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+}
+/* header */
+
+
+.header-bg {
+    background-image: url(..//img/pexels-flora-westbrook-2574614.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    min-height: 100vh
+}
+.header-bg .navbar {
+    background-color: transparent !important; 
+}
+.navbar {
+    box-shadow: 5px 2px 10px;
+}
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.849) !important;
+}
+.navbar-nav.scrolled {
+    background: rgba(0, 0, 0, 0.849) !important;
+}
+.navbar-brand {
+    margin-left: 40px;
+}
+.navbar-nav {
+    margin-right: 70px;
+    z-index: 4000;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    outline: none;
+}
+.container-margin {
+    margin-top: 50%;
+}
+
+
+h1 {
+    color: wheat;
+    font-size: 480%;
+}
+
+/* Primera Sección */
+
+.section_1 {
+    height: 40%;
+}
+.title-row-img {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 2%;
+}
+.parrafo-row-img{
+    text-align: center;
+    color: darkgray;
+    font-size: 115%;
+    margin-bottom: 10%;
+}
+.img-section-1 {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10%; 
+}
+.img {
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    
+}
+.img:hover > .img-section-1 {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    overflow: hidden;
+}
+    /* Segunda Sección */
+.secction_2 {
+    height: 10000%;
+}
+
+.title-section-2 {
+    text-align: center;
+    color: cornsilk;
+    margin-top: 5%;
+}
+.img-content-text {
+    height: 80%; 
+    width: 100%; 
+    margin-top: 40px;
+}
+.text-this-1 {
+    height: 85%;
+    width: 80%;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.btn {
+    margin-top: 20px;
+}
+
+.img-text-2 {
+    height: 80%; 
+    width: 100%; 
+    margin-top: 10px;
+}
+.row-edit-1 {
+    margin-bottom: 10%;
+}
+.barra-section_2 {
+    display: none;
+    color: rgb(44, 42, 42);
+}
+
+#text-this-margin {
+    margin-bottom: 10%;
+}
+
+/* Tercera Sección */
+
+.section_3 {
+    height: 800px;
+}
+#container-form {
+    margin-top: 5%;
+}
+
+.container-3 {
+    margin-top: 5%;
+}
+figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+    height: 70%;
+    width: 90%;
+}
+
+.img-section-3 {
+    width: 100%;
+    height: 100%;
+    margin-right: 10%;
+    transition: all 500ms ease-out;
+}
+.text-hover {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(105, 90, 205, 0.377);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.title-hover {
+    color: snow;
+}
+.parrafo-hover {
+    color: snow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+figure:hover > .text-hover {
+    opacity: 1;
+    visibility: visible;
+} 
+figure:hover > .text-hover .title-hover {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+figure:hover > .text-hover .title-hover {
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+figure:hover > .text-hover .parrafo-hover {
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+
+
+     /*   Media Queries   */
+
+
+@media screen and (max-width: 1199px) { 
+    .text-1 {
+       font-size: 19px;
+    }
+    .text-2 {
+        font-size: 19px;
+    }
+    .text-3 {
+        display: none;
+    }
+ }
+ @media screen and (max-width: 991px) {
+     .row-edit {
+         margin-top: 30%;
+     }
+ }
+ @media screen and (max-width:882px) {
+     .navbar {
+         height: 10%;
+     }
+ }
+@media screen and (min-width:780px) {
+    .container-margin {
+        margin-top: 30%;
+    }
+}
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 350%;
+    }
+    .text-this-1 {
+        margin-left: 0px;
+    }
+    .text-this-1 {
+        border: solid 2px black;
+        padding: 15px;
+    }
+    .barra-section_2 {
+        display: block;
+    }
+ 
+}
+@media screen and (max-width: 544px) {
+    .navbar-brand {
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 448px) {
+    .navbar {
+        height: 13%;
+    }
+}
+
+@media screen and (max-width: 445px) {
+   
+}
+
+@media screen and (max-width: 439px) {
+    h1 {
+        font-size: 250%;
+    }
+ 
+    
+}
+
+@media screen and (max-width: 338px) {
+    #navbar-link-tittle {
+        font-size: 90%;
+    }
+}
+
+
+
